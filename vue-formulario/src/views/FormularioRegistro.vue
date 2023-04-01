@@ -261,8 +261,7 @@ export default {
       telefono: "",
       celular: "",
       codigoPostal: "",
-      foto_documento_frontal: "",
-      foto_documento_trasera: "",
+
     };
   },
   methods: {
@@ -309,6 +308,21 @@ export default {
         alert("El correo electrónico ingresado no es válido.");
         return;
       }
+      console.log({
+        primerNombre: this.primerNombre,
+        segundoNombre: this.segundoNombre,
+        correoElectronico: this.correoElectronico,
+        telefono: this.telefono,
+        celular: this.celular,
+        codigoPostal: this.codigoPostal,
+        pais: this.paisSeleccionado,
+        genero: this.generoSeleccionado,
+        tipoDocumentoSeleccionado:this.tipoDocumentoSeleccionado,
+        numDoc:this.numDoc,
+        foto_documento_frontal:this.foto_documento_frontal,
+        foto_documento_trasera:this.foto_documento_trasera,
+
+      });
     },
   },
 };
